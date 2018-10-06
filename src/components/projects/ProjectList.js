@@ -1,26 +1,16 @@
 import React from 'react'
+import ProjectSummary from './ProjectSummary';
 
 const ProjectList  = () =>{
     return (
         <div className="project-list section">
-            <div className="card z-depth-0 project-summary">
-                <span className="card-title">Project Title</span>
-                <p>Posted by refige wise</p>
-                <p className="greg-text">3rd September, 2em</p>
-            </div>
-
-                 <div className="card z-depth-0 project-summary">
-                <span className="card-title">Project Title</span>
-                <p>Posted by refige wise</p>
-                <p className="greg-text">3rd September, 2em</p>
-            </div>
-
-                 <div className="card z-depth-0 project-summary">
-                <span className="card-title">Project Title</span>
-                <p>Posted by refige wise</p>
-                <p className="greg-text">3rd September, 2em</p>
-            </div>
+            <ProjectSummary/>
+            <ProjectSummary/>
+            <ProjectSummary/>
+            <ProjectSummary/>
+            <ProjectSummary/>
         </div>
+
     )
 }
 
