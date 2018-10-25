@@ -13,7 +13,7 @@ const createNotification = (notification => {
         .add(notification)
         .then(doc => console.log('notification added', doc));
 })
-
+// function to notifiy the user when the project is created
 exports.projectCreated = functions.firestore
     .document('projects/{projectId}')
     .onCreate(doc => {
@@ -26,6 +26,7 @@ exports.projectCreated = functions.firestore
         return createNotification(notification);
     });
 
+// user authentication triggers in cloud functions
 exports.userJoined = functions.auth.user()
     .onCreate(user => {
 
